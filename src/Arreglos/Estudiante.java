@@ -15,7 +15,7 @@ public class Estudiante implements Comparable<Estudiante>{
     public String toString(){
         StringBuilder cadena = new StringBuilder();
         cadena.append("Hola soy ").append(nombre).append(" y tengo ").append(edad).append(" Años");
-        return cadena.toString();   
+        return cadena.toString();
     }
 
 }

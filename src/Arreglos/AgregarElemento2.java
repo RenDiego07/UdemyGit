@@ -25,8 +25,6 @@ public class AgregarElemento2 {
 
         }catch(NumberFormatException e){
             e.printStackTrace();
-        }catch (IndexOutOfBoundsException r){
-            r.getMessage();
         }catch(Exception e2){
             e2.printStackTrace();
         }

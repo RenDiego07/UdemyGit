@@ -1,0 +1,63 @@
+NullPointerException ---> se da cuando un objeto nulo invoca un metodo
+Atributos final ---> constantes
+Las clases no pueden heredar de una clase que es de tipo final
+
+Enum es una coleccion de constantes o atributos constantes
+
+Cuando sobreescribo el metodo toString en la clase enum y dicha clase tiene un constructor entonces al momento de imprimir la
+constante este imprimirá lo indicado en el toString
+
+UML --->
+Rombo --> cuando una clase tiene mas de un objeto de una clase (Composicion)
+composicion indica que este objeto no puede existir sin la existencia de un objeto
+es decir la clase depende de la otra clase para que exista
+
+
+
+
+Si tenemos en una clase atributos con modificador de accedo default podemos solo usarlos dentro de las clases de los paquete
+
+en el caso de que se quiera usar la clase de un paquete distinto se debe de hacer import
+
+cuando hacemos import java.util*;   ----> el * se le llama wildcard
+
+src ---> raiz
+esta esta divido en directorios
+---------Restricciones con los modificadores de acceso en paquetes----------------------
+Cuando una clase tenga el modificador de acceso default esta no podrá ser usada en otro paquete a pesar de ser importada
+
+Tambien aplica con los atributos, si una clase tiene el modifificador de acceso public y dicha tiene atributos que tienen
+modificador de acceso default estos no podran ser usados en otras clases
+
+
+si tenemos modificador de acceso protected ya sean en clases o atributos estos solo podran ser usados si estan dentro del mismo
+paquete o si es que estos heredan de una clase
+
+
+------ Fin de Restriccion de los modificadores de acceso -------------
+Podemos usar el import con las clases enum dado que son estaticas podemos usar este metodo para poder usar las constantes
+sin la necesidad de usar el nombre enum
+
+Sobrecarga se refiere a la posibilidad de tener 2 metodos con el mismo nombre, pero con diferentes funciones
+ahora lo que tienen que tener diferente estos metodos son los parametros, el tipo (Firma)
+
+
+
+Leccion --06--05--2023
+podemos tener un metodo en el cual su parametro sea generalizado
+
+Si puede existir sobrecarga entre metodos estaticos
+
+Herencia: se puede hacer un sobreescribir los metodos de la clase padre e incluso refinarlos con llamando al metodo del padre
+por medio de super."Nombre de la clase del padre"
+
+se puede tener un metodo con Final en la clase padre, esta tendra la caracteristica que no podrá ser sobrescrito
+
+si tenemos la palabra Final public como modificador de acceso de una clase esta no podrá usarse como padre
+es decir no va a tener jerarquia
+
+
+el modificador de acceso protected solo tiene las ventajas que de las clases hijas pueden usar de sus atributos
+sin necesidad de tener un metodo extra para modificarlo
+
+consecuencias: cualquier clase que se encuentre dentro del paquete puede acceder a los metodos de la clase padre 

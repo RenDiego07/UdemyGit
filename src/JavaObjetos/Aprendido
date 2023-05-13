@@ -60,4 +60,20 @@ es decir no va a tener jerarquia
 el modificador de acceso protected solo tiene las ventajas que de las clases hijas pueden usar de sus atributos
 sin necesidad de tener un metodo extra para modificarlo
 
-consecuencias: cualquier clase que se encuentre dentro del paquete puede acceder a los metodos de la clase padre 
+consecuencias: cualquier clase que se encuentre dentro del paquete puede acceder a los metodos de la clase padre
+
+
+------------------Diagrama HML-------------------
+todas atributo, clase o metodo que sea estracto tiene que ir con letra cursiva
+-----------------------------------------------------------------------------
+
+Cuando tengo una clase tiene como atributo una lista ya sea un ArrayList
+
+Cuando se tiene como parametro en el constructor una lista no se tendrá que hacer
+"nombre de la variable lista"  = new ArrayList<valor/dominio>
+
+cuando no se pasa como parametro una lista en el constructor se tiene que inicializar la lista
+con : ----> "nombre de la variable lista"  = new ArrayList<valor/dominio>
+
+Dado que la List es una interface cuando se inicializa se tiene que hacer mediante un objeto este
+sera ArrayList<>

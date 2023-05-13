@@ -1,0 +1,4 @@
+el metodo Arrays.toList de vuelve un arrayList
+
+la ventaja es que si tienes objetos ya creados los puedes agregar por medio del metodo "Arrays.toList()"
+este metodo es estatico de la clase Arrays

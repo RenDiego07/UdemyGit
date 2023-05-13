@@ -4,25 +4,40 @@ public class Estudiante {
     public String nombre;
     public int cedula;
     public int edad;
-    public Estudiante(String nombre, int cedula, int edad){
+
+    public Estudiante(String nombre, int cedula, int edad) {
         this.nombre = nombre;
         this.cedula = cedula;
         this.edad = edad;
 
     }
-    @Override
-    public boolean equals(Object e){
 
-        if(e == this){
+    public Estudiante(String nombre) {
+        this.nombre = nombre;
+    }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Nombre: ").append(this.nombre);
+        return sb.toString();
+    }
+
+
+    @Override
+    public boolean equals(Object e) {
+
+        if (e == this) {
             return true;
-        }else if(e != null && e instanceof Estudiante){
-            Estudiante other= (Estudiante) e;
-            if(other.nombre.equals(this.nombre)){
+        } else if (e != null && e instanceof Estudiante) {
+            Estudiante other = (Estudiante) e;
+            if (other.nombre.equals(this.nombre)) {
                 return true;
             }
         }
         return false;
     }
+
+
 
     public static void main(String[] args) {
         Estudiante diego = new Estudiante("Diego",9,2);
@@ -30,5 +45,5 @@ public class Estudiante {
         if(diego.equals(Diego)){
             System.out.println("sep");
         }
-    }
+}
 }

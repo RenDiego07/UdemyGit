@@ -1,6 +1,9 @@
-package Remember;
+package Generics;
+
 import java.util.*;
-public class Estudiante implements Comparable<Estudiante> {
+
+public class Estudiante implements Comparable<Estudiante>,Identificable<String> {
+
     public String nombre;
     public int cedula;
     public int edad;
@@ -23,6 +26,7 @@ public class Estudiante implements Comparable<Estudiante> {
     }
 
 
+
     @Override
     public boolean equals(Object e) {
 
@@ -40,6 +44,18 @@ public class Estudiante implements Comparable<Estudiante> {
         int valor = (String.valueOf(this.nombre)).compareTo((String.valueOf(r.edad)));
         return valor;
     }
+    // creando un metodo que nos permite dar un subconjunto de la lista
+    public List<Estudiante> subLista (ArrayList<Estudiante> lista, int a, int b){
+        return lista.subList(a,b);
+    }
+    @Override
+    public String retornarIdentificacion(){
+        return this.nombre;
+    }
+    @Override
+    public int hashCode(){
+        return Objects.hash(this.nombre);
+    }
 
 
 
@@ -55,5 +71,8 @@ public class Estudiante implements Comparable<Estudiante> {
             System.out.println(e);
         }
 
+
+
     }
+
 }

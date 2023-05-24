@@ -1,6 +1,11 @@
-package Remember;
-import java.util.*;
+package interfaces2;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.ArrayList;
 public class Estudiante implements Comparable<Estudiante> {
+
     public String nombre;
     public int cedula;
     public int edad;
@@ -40,8 +45,12 @@ public class Estudiante implements Comparable<Estudiante> {
         int valor = (String.valueOf(this.nombre)).compareTo((String.valueOf(r.edad)));
         return valor;
     }
+    // creando un metodo que nos permite dar un subconjunto de la lista
+    public List<Estudiante> subLista (ArrayList<Estudiante> lista, int a, int b){
+        return lista.subList(a,b);
+    }
 
-
+    
 
     public static void main(String[] args) {
         Estudiante diego = new Estudiante("DiegoFlores",9,2);
@@ -54,6 +63,8 @@ public class Estudiante implements Comparable<Estudiante> {
         for(Estudiante e: registro){
             System.out.println(e);
         }
+
+
 
     }
 }

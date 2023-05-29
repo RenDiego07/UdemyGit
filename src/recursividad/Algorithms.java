@@ -7,7 +7,7 @@ public class Algorithms {
     public static int contador = 0;
     public static void main(String[] args) {
         int [] serie = {1,2,3,4,5,};
-        
+
         System.out.println(sumArray(serie));
         System.out.println(CalcPotencia(2,3));
         System.out.println(sumaDigitos(12345));

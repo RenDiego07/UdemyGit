@@ -1,0 +1,15 @@
+Los Collection es una API para agrupación de objetos, consta de tres tipos: List, Set, Map
+siempre con alguna reglas que se los puede aplicar
+
+  List --> almacenan objetos en una coleccion de manera linear
+  Set --> es una coleccion en la cual no pueden haber valores repetidos y no mantienen orden en sus elementos
+  Maps --> almacenen información en base a parejas llaves y valores
+
+
+
+  Arbol de implementacion de interfaces
+  colecciones
+  Listas sincronizadas
+
+  todas los objetos que esten dentro de un treeSet tienen que heredar la interface comparable
+  soy yo de mi otra compu

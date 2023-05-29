@@ -1,0 +1,6 @@
+dentro de las interfaces no se debe de usar el public dado que todos los metodos tienen el modificador de acceso public
+
+cuando se hace un metodo estatico se tiene que llamar a la interface para usar dicho metodo
+o incluso podriamos importar todos los metodo estaticos de la interface para poder solo llamar al metodo por medio de su nombre
+
+Tmb puede tener constantes por medio de final static
